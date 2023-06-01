@@ -12,7 +12,7 @@ pdf_path = os.path.join(cwd, pdf_name)
 # Page
 st.set_page_config(page_title='ChargED - Documentation', page_icon=':closed_book:')
 st.title('Documentation')
-st.write('Please find our report containing model details below')
+st.write('Read, and download our report below.')
 
 
 st.markdown(get_pdf(pdf_path), unsafe_allow_html=True)

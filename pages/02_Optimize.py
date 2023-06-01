@@ -13,7 +13,7 @@ import logging
 st.set_page_config(page_title='ChargED - Optimiser',
                    page_icon=':car:',
                    layout='wide',  ## 'centered','wide'
-                   initial_sidebar_state= 'collapsed' # 'expanded'  ## 'auto','collapsed','expanded'
+                   initial_sidebar_state= 'auto' # 'expanded'  ## 'auto','collapsed','expanded'
                    )
 st.markdown('#### Building Charging Infrastructure to Minimise Total Cost')
 
@@ -334,7 +334,7 @@ if st.session_state['optimise_status'] == 2:
                                x='loc_x',
                                y='loc_y',
                                animation_frame='iteration',
-                               title='Final Infrastructure Plan (Small Circle: Vehicle Locations)',
+                               title='Final Infrastructure Plan (Small Circle: Vehicle Locations, Large Circle: Built Locations)',
                                height=600
                                )
         final_fig.update_xaxes(title='x coordinate/Miles', showgrid=False, mirror=True, ticks='outside', showline=True)
